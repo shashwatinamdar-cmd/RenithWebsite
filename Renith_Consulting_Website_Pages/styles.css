@@ -1,0 +1,100 @@
+:root {
+  --navy:#0A2A4B;
+  --deep:#072033;
+  --teal:#0A6C82;
+  --soft:#E8F1F5;
+  --ink:#1E2A32;
+  --muted:#6F808F;
+  --card:#FFFFFF;
+  --shadow:rgba(0,0,0,0.10);
+}
+body {
+  margin:0;
+  font-family:"Inter",system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:#F5F7FA;
+  color:var(--ink);
+}
+h1,h2,h3 { color:var(--navy); }
+.container { max-width:1100px; margin:auto; padding:30px 20px; }
+.section { margin:40px 0; }
+.hero {
+  padding:40px 20px;
+  text-align:center;
+}
+.hero.premium {
+  background:linear-gradient(135deg,var(--navy),var(--deep));
+  color:white;
+  border-radius:0 0 40px 40px;
+}
+.hero h1 { font-size:42px; margin-bottom:12px; }
+.hero-sub { max-width:700px; margin:0 auto; font-size:24px; opacity:0.95; }
+.btn {
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:18px;
+}
+.premium-btn {
+  background:var(--teal);
+  color:white;
+}
+.premium-btn:hover { opacity:0.9; }
+.grid-2 {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+@media (max-width:800px){
+  .grid-2 { grid-template-columns:1fr; }
+}
+.card {
+  background:var(--card);
+  padding:24px;
+  border-radius:16px;
+  box-shadow:0 8px 24px var(--shadow);
+}
+.premium-card h3 {
+  margin-top:0;
+  margin-bottom:8px;
+  font-size:22px;
+  color:var(--teal);
+}
+.premium-list li {
+  margin:10px 0;
+  font-size:18px;
+}
+.footer {
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+  color:var(--muted);
+}
+
+.top-nav {
+  background: #111;
+  padding: 18px 0;            /* More height */
+  border-bottom: 1px solid #333;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;   /* Centers the items horizontally */
+  gap: 40px;                 /* Keeps spacing between Home & Contact */
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;          /* Increased size */
+  font-weight: 600;           /* Bolder */
+  letter-spacing: 0.5px;      /* Slight letter spacing */
+  padding: 8px 12px;          /* Better click-target space */
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #35b8ff;
+}
